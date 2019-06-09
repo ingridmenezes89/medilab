@@ -12,30 +12,33 @@
     
 </head>
 <body>
-    <!--HEADER-->
-    <header>
-        <div id="logo">
-            <a href="#">
-                <img src="assets/img/logo.png" alt="logo">
-            </a>
-        </div>
-        <nav id="main-nav">
-            <ul>
-                <a href="#home"><li>HOME</li></a>
-                <a href="#item01"><li>ITEM 01</li></a>
-                <a href="#item02"><li>ITEM 02</li></a>
-                <a href="#item03"><li>ITEM 03</li></a>
-                <a href="#item04"><li>ITEM 04</li></a>
-            </ul>
-        </nav>
-    </header>
 
-    <!--HOME-->
+    <!--BG-->
     <section id="home">
     </section>
 
+    <!--HEADER-->
+    <header>
+        <div class="header-container">
+            <div id="logo">
+                <a href="#">
+                    <img src="assets/img/logo.png" alt="logo">
+                </a>
+            </div>
+            <nav id="main-nav">
+                <ul>
+                    <a href="#home"><li>HOME</li></a>
+                    <a href="#item01"><li>ITEM 01</li></a>
+                    <a href="#item02"><li>ITEM 02</li></a>
+                    <a href="#item03"><li>ITEM 03</li></a>
+                    <a href="#item04"><li>ITEM 04</li></a>
+                </ul>
+            </nav>
+        </div>        
+    </header>  
+
     <!--Nossos serviços-->
-    <section id="servicos">
+    <section id="nossos-servicos">
         <h2>Nossos Serviços</h2>
         <hr>
         <p>
@@ -43,20 +46,34 @@
         </p>
     </section>
 
-    <!--SERVIÇOS-->
-    <section id="item01">
+    <section id="servicos">
         <h3>Lorem</h3>
-        </br>
-        <div id="itens">
-            <ul>
-                <li><a href="#"><img src="assets/img/ico1.jpg" alt="estetoscópio"></a></li>
-                <li><a href="#"><img src="assets/img/ico2.jpg" alt="médico"></a></li>
-                <li><a href="#"><img src="assets/img/ico3.jpg" alt="medicamentos"></a></li>
-                <li><a href="#"><img src="assets/img/ico1.jpg" alt="estetoscópio"></a></li>
-                <li><a href="#"><img src="assets/img/ico2.jpg" alt="médico"></a></li>
-                <li><a href="#"><img src="assets/img/ico3.jpg" alt="medicamentos"></a></li>
-            </ul>
-        </div>
+        <div class="grid-servicos">
+            <div class="servico">
+                <a href="#"><img src="assets/img/ico1.jpg" alt="estetoscópio"></a>
+            </div>
+            <div class="servico-texto">
+                <p>
+                    Que palhaçada!
+                </p>
+            </div>
+            <div class="servico">
+                    <a href="#"><img src="assets/img/ico3.jpg" alt="medicamentos"></a>
+            </div>
+            <div class="servico-texto">
+                    <p>
+                        Que palhaçada!
+                    </p>
+                </div>
+            <div class="servico">
+                    <a href="#"><img src="assets/img/ico2.jpg" alt="médico"></a>
+            </div>
+            <div class="servico-texto">
+                    <p>
+                        Que palhaçada!
+                    </p>
+                </div>
+        </div>        
     </section>
 
     <!--FOOTER-->
@@ -68,7 +85,7 @@
             <li><i class="fa fa-envelope"></i> lorem@email.com</li>
             </ul>
         </div>
-      </footer>
+    </footer>
 
     <!-- <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"> -->
     </script>
