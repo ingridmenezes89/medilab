@@ -169,37 +169,62 @@ header nav ul li:hover {
     position: relative;
 }
 .emergencia-card {
-    width: 60%;
-    min-height: 220px;    
+    width: 50%;
+    min-height: 180px;    
     display: grid;
-    grid-template-columns: 70% 30%;
-    grid-template-rows: 150px;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 180px;
     background-color: white;
     position: absolute;
     top: 50%;
-    left:25%;
-    transform: translateY(-50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
 
 }
 .emergencia-card-text h3{
     color: #266F80;
     font-weight: bold;
-    height: 80%;
+    text-align: left;
+    padding: 20px 40px 0 40px;
+    width: 80%;
     
 }
 .emergencia-card-text p{
     color: #266F80;
-    padding-top: 30px;
+    padding: 0 0 0 40px;
+    width: 80%;
+    text-align: left;
 }
-
 .emergencia-card-img img {
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 80%;
+    position: relative;
+    top: 50%;
+    transform: perspective(1px) translateY(-50%);
+}
+.emergencia-card-button {
+    width: 100px;
+    height: 50px;    
+    background-color: #FFB737;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.emergencia-card-button-center {
+    position: relative
+}
+.emergencia-card-button h3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -20%);
 }
 
 #medicos {
     width: 80%;
-    margin: 0 auto 0 auto;
+    margin: 40px auto 0 auto;
     padding-bottom: 40px;
     overflow: hidden;
 }
@@ -330,6 +355,10 @@ header nav ul li:hover {
         grid-template-columns: 49% 49%;
         grid-gap: 2%;
     }
+   
+    .emergencia-card {
+        width: 80%;    
+    }
 }
 
 /*mobile*/
@@ -381,26 +410,56 @@ header nav ul li:hover {
         padding: 10px 10px 10px 10px;
     }
 
-  header nav {
-      margin: 0;
-      float: none;
-  }
+    header nav {
+        margin: 0;
+        float: none;
+    }
 
-  .fa-bars {
-      font-size: 17px;
-      display: inline-block;
-      width: 100%;
-      cursor: pointer;
-      text-align: right;
-      margin: -25px 30px 0 0;
-  }
+    .fa-bars {
+        font-size: 17px;
+        display: inline-block;
+        width: 100%;
+        cursor: pointer;
+        text-align: right;
+        margin: -25px 30px 0 0;
+    }
 
-  .fa-bars:hover {
-      opacity: 0.5;
-  }
+    .fa-bars:hover {
+        opacity: 0.5;
+    }
 
-  header nav ul {
-      height: 0;
-      overflow: hidden;
-  }
+    header nav ul {
+        height: 0;
+        overflow: hidden;
+    }
+
+    #emergencia {
+        height: 600px;
+    }
+    .emergencia-card{
+        width: 90%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+    }
+    .emergencia-card-text {
+        padding-bottom: 30px;
+    }
+    .emergencia-card-text h3{
+        padding: 0 0 0 40px;
+        width: 80%;        
+    }
+    .emergencia-card-img {
+        grid-row: 1;
+    }
+    .emergencia-card-img img {
+        width: 90%;
+        height: auto;
+    }
+    .emergencia-card-button {
+        position: absolute;
+        top: 95%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
