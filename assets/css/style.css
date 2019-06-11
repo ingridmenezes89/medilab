@@ -43,15 +43,11 @@ hr {
    margin: -20px auto 30px auto;
 }
 
-li, #logo, .fa-bars {
+li, #logo {
     transition: all 300ms;
     -webkit-transition: all 300ms;
     -moz-transition: all 300ms;
     -o-transition: all 300ms;
-}
-
-.fa-bars {
-    display: none;
 }
 
 /* HEADER */
@@ -403,4 +399,22 @@ header nav ul li:hover {
       height: 0;
       overflow: hidden;
   }
+
+  @media (min-width: 320px) and (max-width: 599px) {
+    header {
+        width: 100%;
+        height: 10%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: rgba(38, 111, 128);
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+    }
+    
+    #logo {
+        width: 40%;
+        position: fixed;
+        top: 1%;
+    }
 }
