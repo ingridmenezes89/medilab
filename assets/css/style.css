@@ -43,11 +43,15 @@ hr {
    margin: -20px auto 30px auto;
 }
 
-li, #logo {
+li, #logo, .fa-bars {
     transition: all 300ms;
     -webkit-transition: all 300ms;
     -moz-transition: all 300ms;
     -o-transition: all 300ms;
+}
+
+.fa-bars {
+    display: none;
 }
 
 /* HEADER */
@@ -257,11 +261,6 @@ header nav ul li:hover {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
-.emergencia-card-button:hover {
-    background-color: #0CB8B6;
-}
-
 .emergencia-card-button-center {
     position: relative
 }
@@ -287,10 +286,6 @@ header nav ul li:hover {
 .medico img {
     width: 100%;
     height: auto;
-}
-
-.medico img:hover {
-    opacity: 0.5;    
 }
 
 #servicos h1{
@@ -325,16 +320,6 @@ header nav ul li:hover {
     -moz-transform: scale(1.1);
     -o-transform: scale(1.1);
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
-}
-
-.item-email a {
-    font-family: 'Roboto';
-    color: #266F80;
-    text-transform: lowercase;
-}
-
-.item-email a:hover {
-    opacity: 0.5;
 }
 
 
@@ -473,45 +458,56 @@ header nav ul li:hover {
         padding: 10px 10px 10px 10px;
     }
 
-  header nav {
-      margin: 0;
-      float: none;
-  }
+    header nav {
+        margin: 0;
+        float: none;
+    }
 
-  .fa-bars {
-      font-size: 17px;
-      display: inline-block;
-      width: 100%;
-      cursor: pointer;
-      text-align: right;
-      margin: -25px 30px 0 0;
-  }
-
-  .fa-bars:hover {
-      opacity: 0.5;
-  }
-
-  header nav ul {
-      height: 0;
-      overflow: hidden;
-  }
-
-  @media (min-width: 320px) and (max-width: 599px) {
-    header {
+    .fa-bars {
+        font-size: 17px;
+        display: inline-block;
         width: 100%;
-        height: 10%;
-        position: fixed;
-        top: 0;
-        left: 0;
-        background: rgba(38, 111, 128);
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-        z-index: 1;
+        cursor: pointer;
+        text-align: right;
+        margin: -25px 30px 0 0;
     }
-    
-    #logo {
-        width: 40%;
-        position: fixed;
-        top: 1%;
+
+    .fa-bars:hover {
+        opacity: 0.5;
     }
-  }
+
+    header nav ul {
+        height: 0;
+        overflow: hidden;
+    }
+
+    #emergencia {
+        height: 600px;
+    }
+    .emergencia-card{
+        width: 90%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+    }
+    .emergencia-card-text {
+        padding-bottom: 30px;
+    }
+    .emergencia-card-text h3{
+        padding: 0 0 0 40px;
+        width: 80%;        
+    }
+    .emergencia-card-img {
+        grid-row: 1;
+    }
+    .emergencia-card-img img {
+        width: 90%;
+        height: auto;
+    }
+    .emergencia-card-button {
+        position: absolute;
+        top: 95%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
