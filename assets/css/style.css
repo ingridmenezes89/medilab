@@ -165,37 +165,67 @@ header nav ul li:hover {
     position: relative;
 }
 .emergencia-card {
-    width: 60%;
-    min-height: 220px;    
+    width: 50%;
+    min-height: 180px;    
     display: grid;
-    grid-template-columns: 70% 30%;
-    grid-template-rows: 150px;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 180px;
     background-color: white;
     position: absolute;
     top: 50%;
-    left:25%;
-    transform: translateY(-50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
 
 }
 .emergencia-card-text h3{
     color: #266F80;
     font-weight: bold;
-    height: 80%;
+    text-align: left;
+    padding: 20px 40px 0 40px;
+    width: 80%;
     
 }
 .emergencia-card-text p{
     color: #266F80;
-    padding-top: 30px;
+    padding: 0 0 0 40px;
+    width: 80%;
+    text-align: left;
+}
+.emergencia-card-img img {
+    width: auto;
+    height: 80%;
+    position: relative;
+    top: 50%;
+    transform: perspective(1px) translateY(-50%);
+}
+.emergencia-card-button {
+    width: 100px;
+    height: 50px;    
+    background-color: #FFB737;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.emergencia-card-img img {
-    width: 100%;
-    height: auto;
+.emergencia-card-button:hover {
+    background-color: #0CB8B6;
+}
+
+.emergencia-card-button-center {
+    position: relative
+}
+.emergencia-card-button h3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -20%);
 }
 
 #medicos {
     width: 80%;
-    margin: 0 auto 0 auto;
+    margin: 40px auto 0 auto;
     padding-bottom: 40px;
     overflow: hidden;
 }
@@ -209,6 +239,10 @@ header nav ul li:hover {
 .medico img {
     width: 100%;
     height: auto;
+}
+
+.medico img:hover {
+    opacity: 0.5;    
 }
 
 #servicos h1{
@@ -243,6 +277,16 @@ header nav ul li:hover {
     -moz-transform: scale(1.1);
     -o-transform: scale(1.1);
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.item-email a {
+    font-family: 'Roboto';
+    color: #266F80;
+    text-transform: lowercase;
+}
+
+.item-email a:hover {
+    opacity: 0.5;
 }
 
 
@@ -325,6 +369,10 @@ header nav ul li:hover {
         display: grid;
         grid-template-columns: 49% 49%;
         grid-gap: 2%;
+    }
+   
+    .emergencia-card {
+        width: 80%;    
     }
 }
 
@@ -417,4 +465,5 @@ header nav ul li:hover {
         position: fixed;
         top: 1%;
     }
+  }
 }
