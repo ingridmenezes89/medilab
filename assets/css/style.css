@@ -114,6 +114,9 @@ header nav ul li:hover {
     min-height: 30rem;
 }
 
+/****************************************/
+/*              NOSSOS SERVICOS         */
+/****************************************/
 #nossos-servicos {
     width: 80%;
     height: auto;
@@ -133,7 +136,9 @@ header nav ul li:hover {
     padding: 0px 20px 20px 20px;
 }
 
-/*ITENS*/
+/****************************************/
+/*              SERVICOS                */
+/****************************************/
 #servicos {
     width: 80%;
     margin: 0px auto 0 auto;
@@ -160,56 +165,73 @@ header nav ul li:hover {
     height: auto;
 }
 
-/* #ambulancia {
-    width: 70%;
-    margin: 0px auto 0 auto;   
-
-}
-#ambulancia .grid {
-    display: grid;
-    grid-template-columns: 40% 60%;
-}
-#ambulancia .texto {
-    background-color: #0CB8B6;
-    color: white;
-    position: relative;
-
-} 
-#ambulancia .texto p {
-    width: 80%;
-    margin: 0 auto 0 auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-} */
-
-
+/****************************************/
+/*              AMBULANCIA              */
+/****************************************/
 #ambulancia {
     width: 70%;
     margin: 0px auto 0 auto;
 }
 #ambulancia .grid {
+    display: grid;
+    grid-gap: 3%;
     grid-template:
-		"ambulancia-img texto texto" 50px
-		"ambulancia-img texto texto" 150px
-		"ambulancia-img footer footer" 100px
-		/ 100px 1fr 50px;
+		"ambulancia-img ambulancia-texto ambulancia-texto"
+		"ambulancia-img ambulancia-botoes ambulancia-botoes"
+    ;
 }
-#ambulancia .texto {
+#ambulancia .ambulancia-texto {
     background-color: #0CB8B6;
     color: white;
-
+    min-height: 150px;
 } 
+#ambulancia .ambulancia-texto p {
+    width: 80%;
+    margin: 0 auto 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.ambulancia-img {
+    grid-area: ambulancia-img;
+}
+.ambulancia-texo {
+    grid-area: ambulancia-texo;
+}
+.ambulancia-botoes {
+    grid-area: ambulancia-botoes;
+}
+.grid-ambulancia-botoes {
+    display: grid;
+    grid-gap: 3%;
+    grid-template-columns: 49% 20% 20%;
+}
+.btn-ipsum {    
+    background-color: #FFB737;
+    color: #0CB8B6;    
+}
+.btn-ipsum:hover {
+    background-color: #0CB8B6;
+}
+.btn-lorem{    
+    border-style: solid;
+    border-color: #0CB8B6;
+    color: #0CB8B6;   
+}
+.btn-lorem a{    
+    color: #0CB8B6;   
+}
+.btn-lorem:hover a{    
+    color: white;    
+}
+.btn-lorem:hover {
+    background-color: #0CB8B6;
+}
 
 
-
-
-
-
-
-
-
+/****************************************/
+/*              EMERGENCIA              */
+/****************************************/
 #emergencia {
     background: url('../img/desk-doctor-health-48604.jpg');
     background-position: center center;
@@ -275,6 +297,9 @@ header nav ul li:hover {
     transform: translate(-50%, -20%);
 }
 
+/****************************************/
+/*              MEDICOS                 */
+/****************************************/
 #medicos {
     width: 80%;
     margin: 40px auto 0 auto;
@@ -330,7 +355,9 @@ header nav ul li:hover {
 }
 
 
-/*footer*/
+/****************************************/
+/*              FOOTER                  */
+/****************************************/
 .rodape {
     width: 100%;
     min-height: 100px;
@@ -358,54 +385,6 @@ header nav ul li:hover {
     opacity: 0.5;
 }
 
-/* #copy ul li {
-    width: 33.3%;
-    float: left;
-    margin-bottom:  15px;
-}
-
-#letter {
-    color: #266F80;
-} */
-
-/*monitor*/
-/* 
-@media screen and (max-width: 1200px) {
-    header {
-        height: auto;
-    }
-
-    #logo {
-        width: 100px;
-        margin-top: 5px;
-    }
-
-    header nav {
-        margin-top: 0;
-    }
-
-    header nav ul li {
-        font-size: 12px;
-    }
-
-    #home h1 {
-        font-size: 90px;
-        margin-top: 200px;
-    }
-
-    #home h2 {
-        font-size: 22px;
-    }
-
-    h3 {
-        padding-top: 12%;
-    }
-
-    #itens ul li {
-        width: 40%;
-        margin-bottom:  2%;
-    }
-} */
 
 /*tablets*/
 @media screen  and (min-width: 601px) and (max-width: 1200px) {
@@ -421,8 +400,25 @@ header nav ul li:hover {
         grid-gap: 2%;
     }
    
+    
     .emergencia-card {
         width: 80%;    
+    }
+
+    #ambulancia .grid {
+        display: grid;
+        grid-gap: 3%;
+        grid-template:
+            "ambulancia-img"
+            "ambulancia-texto"
+            "ambulancia-botoes"
+        ;
+        padding-bottom: 50px;
+    }
+    .grid-ambulancia-botoes {
+        display: grid;
+        grid-gap: 5%;
+        grid-template-columns: 10% 30% 30%;
     }
 }
 
@@ -499,7 +495,8 @@ header nav ul li:hover {
     }
 
     #emergencia {
-        height: 600px;
+        min-height: 600px;
+        padding-bottom: 50px;
     }
     .emergencia-card{
         width: 90%;
@@ -526,5 +523,27 @@ header nav ul li:hover {
         top: 95%;
         left: 50%;
         transform: translate(-50%, -50%);
+    }
+
+    #ambulancia {
+        width: 80%;
+        padding-bottom: 100px;
+    }
+    #ambulancia .grid {
+        display: grid;
+        grid-gap: 3%;
+        grid-template:
+            "ambulancia-img"
+            "ambulancia-texto"
+            "ambulancia-botoes"
+        ;
+    }
+    .ambulancia-img img {
+        width: 100%;
+    }
+    .grid-ambulancia-botoes {
+        display: grid;
+        grid-gap: 5%;
+        grid-template-columns: 10% 30% 30%;
     }
 }
