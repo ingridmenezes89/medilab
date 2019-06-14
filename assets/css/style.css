@@ -394,7 +394,7 @@ header nav ul li:hover {
         grid-gap: 2%;
     }
 
-    .grid-medicos {
+    #medicos .grid {
         display: grid;
         grid-template-columns: 49% 49%;
         grid-gap: 2%;
@@ -451,7 +451,7 @@ header nav ul li:hover {
         grid-template-columns: 100%;
     }
 
-    .grid-medicos {
+    #medicos .grid {
         display: grid;
         grid-template-columns: 100%;
     }
