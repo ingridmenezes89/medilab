@@ -160,7 +160,7 @@ header nav ul li:hover {
     height: auto;
 }
 
-#ambulancia {
+/* #ambulancia {
     width: 70%;
     margin: 0px auto 0 auto;   
 
@@ -182,7 +182,33 @@ header nav ul li:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+} */
+
+
+#ambulancia {
+    width: 70%;
+    margin: 0px auto 0 auto;
 }
+#ambulancia .grid {
+    grid-template:
+		"ambulancia-img texto texto" 50px
+		"ambulancia-img texto texto" 150px
+		"ambulancia-img footer footer" 100px
+		/ 100px 1fr 50px;
+}
+#ambulancia .texto {
+    background-color: #0CB8B6;
+    color: white;
+
+} 
+
+
+
+
+
+
+
+
 
 #emergencia {
     background: url('../img/desk-doctor-health-48604.jpg');
