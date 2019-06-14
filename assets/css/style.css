@@ -156,6 +156,30 @@ header nav ul li:hover {
     height: auto;
 }
 
+#ambulancia {
+    width: 70%;
+    margin: 0px auto 0 auto;   
+
+}
+#ambulancia .grid {
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+#ambulancia .texto {
+    background-color: #0CB8B6;
+    color: white;
+    position: relative;
+
+} 
+#ambulancia .texto p {
+    width: 80%;
+    margin: 0 auto 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 #emergencia {
     background: url('../img/desk-doctor-health-48604.jpg');
     background-position: center center;
@@ -229,13 +253,11 @@ header nav ul li:hover {
     padding-bottom: 40px;
     overflow: hidden;
 }
-
-.grid-medicos {
+#medicos .grid {
     display: grid;
     grid-template-columns: 24% 24% 24% 24%;
     grid-gap: 1.5%;
 }
-
 .medico img {
     width: 100%;
     height: auto;
