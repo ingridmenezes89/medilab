@@ -261,6 +261,9 @@ header nav ul li:hover {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.emergencia-card-button:hover {
+    background-color: #0CB8B6;
+}
 .emergencia-card-button-center {
     position: relative
 }
@@ -286,6 +289,10 @@ header nav ul li:hover {
 .medico img {
     width: 100%;
     height: auto;
+}
+
+.medico img:hover {
+    opacity: 0.5;    
 }
 
 #servicos h1{
@@ -339,6 +346,16 @@ header nav ul li:hover {
     padding-top: 50px;
     display: grid;
     grid-template-columns: 33% 33% 33%;
+}
+
+.item-email a {
+    font-family: 'Roboto';
+    color: #266F80;
+    text-transform: lowercase;
+}
+
+.item-email a:hover {
+    opacity: 0.5;
 }
 
 /* #copy ul li {
